@@ -36,7 +36,7 @@ function processResult(result: Result): Result {
   let sourceCache = {};
   let coveredFiles = [];
 
-  let basepath = path.join(jestConfig.cacheDirectory, '/ts-jest/');
+  let basepath = path.join(jestConfig.cacheDirectory, '/ts-jest-no-babel/');
   if (!fs.existsSync(basepath)) {
     fs.mkdirSync(basepath);
   }
